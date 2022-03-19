@@ -1,0 +1,187 @@
+/*
+================
+Fonts 
+================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap");
+
+/*
+================
+Variables 
+================
+*/
+:root {
+	/* Primary color*/
+	--primary-100: #e7dbfe;
+	--primary-200: #cfb8fc;
+	--primary-300: #b794fb;
+	--primary-400: #9f71f9;
+	--primary-500: #874df8;
+	--primary-600: #6c3ec6;
+	--primary-700: #512e95;
+	--primary-800: #361f63;
+	--primary-900: #1b0f32;
+	/* Grey */
+	--grey-100: #f1f5f9;
+	--grey-200: #e2e8f0;
+	--grey-300: #cbd5e1;
+	--grey-400: #94a3b8;
+	--grey-500: #64748b;
+	--grey-600: #475569;
+	--grey-700: #334155;
+	--grey-800: #1e293b;
+	--grey-900: #0f172a;
+	/* Other colors*/
+	--white: white;
+	--black: black;
+	/* Font */
+	--ff: "Syne", sans-serif;
+}
+
+/*
+================
+Global Styles
+================
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--grey-200);
+	font-family: var(--ff);
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: capitalize;
+}
+
+/*
+================
+Navbar
+================
+*/
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 8vh;
+	background-color: var(--white);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo h3 {
+	color: var(--primary-500);
+	letter-spacing: 0.1rem;
+}
+
+div h3 span {
+	color: var(--grey-700);
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link {
+	margin-right: 1rem;
+	font-size: 1rem;
+}
+
+.nav-link a {
+	color: var(--grey-800);
+	letter-spacing: 0.1rem;
+}
+
+.nav-link a:hover {
+	color: var(--primary-500);
+}
+
+/*
+================
+Main
+================
+*/
+main {
+	height: calc(100vh - 16vh);
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	text-align: center;
+}
+
+.container h2 {
+	background-color: var(--grey-800);
+	padding: 1.5rem 2rem;
+	border-radius: 10px;
+	color: var(--white);
+	letter-spacing: 0.2rem;
+	margin-bottom: 2rem;
+}
+
+.color {
+	color: var(--primary-500);
+}
+
+.btn {
+	border: 3px solid var(--grey-800);
+	padding: 8px 12px;
+	border-radius: 10px;
+	background-color: transparent;
+	color: var(--grey-800);
+	font-family: var(--ff);
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: var(--grey-800);
+	color: var(--white);
+	transition: all 0.3s linear;
+}
+
+/* create a responsive navbar later */
+
+/* @media screen and (max-width: 518px) {
+  
+} */
+
+/*
+================
+Footer
+================
+*/
+.footer {
+	background-color: var(--grey-800);
+	height: 8vh;
+	color: var(--grey-100);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 -9px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer a {
+	color: var(--primary-500);
+}
